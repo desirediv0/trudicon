@@ -15,7 +15,6 @@ import {
   ArrowRight,
   Shield,
   FileCheck2,
-  Terminal,
   Activity
 } from "lucide-react";
 import { ImagePlaceholder } from "@/components/site/ImagePlaceholder";
@@ -249,9 +248,6 @@ export function ComplianceSecurityClient() {
           >
             {/* Left Content */}
             <motion.div variants={itemVariants} className="lg:col-span-7 space-y-6">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/5 border border-primary/10 text-xs font-semibold text-primary uppercase tracking-wider">
-                ISO 27001 Governance
-              </div>
               <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
                 Information Security Management
               </h2>
@@ -362,9 +358,9 @@ export function ComplianceSecurityClient() {
             </div>
 
             {/* Dashboard style visualization */}
-            <div className="grid gap-8 lg:grid-cols-12 items-stretch max-w-5xl mx-auto">
-              {/* Left Side: Interactive diagram */}
-              <div className="lg:col-span-7 rounded-[24px] border border-border bg-[#F8FAFC]/50 p-8 flex flex-col justify-between relative overflow-hidden min-h-[360px]">
+            <div className="max-w-3xl mx-auto w-full">
+              {/* Interactive diagram */}
+              <div className="w-full rounded-[24px] border border-border bg-[#F8FAFC]/50 p-8 flex flex-col justify-between relative overflow-hidden min-h-[360px]">
                 <div className="absolute inset-0 pointer-events-none opacity-[0.02] bg-[linear-gradient(to_right,#E5E7EB_1px,transparent_1px),linear-gradient(to_bottom,#E5E7EB_1px,transparent_1px)] bg-[size:16px_16px]" />
 
                 <div className="flex justify-between items-center relative z-10">
@@ -422,30 +418,6 @@ export function ComplianceSecurityClient() {
                 <div className="text-[10px] text-muted-foreground font-semibold uppercase tracking-wider flex justify-between items-center relative z-10">
                   <span>Architecture: ISMS Unified Protocol</span>
                   <span>Ver: 2.1</span>
-                </div>
-              </div>
-
-              {/* Right Side: Terminal Status Log */}
-              <div className="lg:col-span-5 rounded-[24px] border border-border bg-slate-950 p-6 flex flex-col justify-between text-white font-mono text-xs min-h-[360px]">
-                <div className="flex items-center justify-between border-b border-white/10 pb-4">
-                  <div className="flex items-center gap-2">
-                    <Terminal className="h-4 w-4 text-primary" />
-                    <span className="font-bold text-white uppercase tracking-wider text-[10px]">Operational Logs</span>
-                  </div>
-                  <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
-                </div>
-
-                <div className="flex-1 py-4 space-y-3 font-semibold text-[11px]">
-                  <p className="text-white/40">&gt; INITIALIZING ISMS COMPLIANCE CHECK...</p>
-                  <p className="text-primary">&gt; CONFIGURING ENCRYPTED CHANNEL PORTALS [OK]</p>
-                  <p className="text-white/80">&gt; ISO 27001 CONTROLS ACTIVE: 114 CONTROLS ALIGNED</p>
-                  <p className="text-[#5B6470]">&gt; USER ROLE: CLEARED ANALYST ACCESS GRANTED</p>
-                  <p className="text-green-400">&gt; PROTOCOL VERIFICATION INTEGRITY STATS: 100% SECURE</p>
-                </div>
-
-                <div className="border-t border-white/10 pt-4 flex justify-between text-[10px] text-white/40 font-semibold">
-                  <span>SYSTEM STATUS: ACTIVE</span>
-                  <span>TRUDICON SECURITY</span>
                 </div>
               </div>
             </div>

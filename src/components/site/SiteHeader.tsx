@@ -166,9 +166,8 @@ export function SiteHeader() {
                         <img
                             src="/logo.jpeg"
                             alt="Trudicon Logo"
-                            className="h-12 md:h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+                            className="h-12 md:h-14 w-auto object-contain bg-primary p-1.5 rounded-lg transition-transform duration-300 group-hover:scale-[1.02]"
                         />
-
                     </Link>
 
                     {/* Desktop Navigation Center */}
@@ -312,7 +311,7 @@ export function SiteHeader() {
                                         <img
                                             src="/logo.jpeg"
                                             alt="Trudicon Logo"
-                                            className="h-8 w-auto object-contain"
+                                            className="h-8 w-auto object-contain bg-primary p-1 rounded"
                                         />
                                         <span className="text-[14px] font-bold tracking-[0.1em] text-foreground uppercase">
                                             Trudicon

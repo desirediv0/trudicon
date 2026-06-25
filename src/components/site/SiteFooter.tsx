@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, ShieldCheck, Lock, ClipboardCheck, Globe, MapPin, Phone, MessageSquare, Mail } from "lucide-react";
+import { ArrowRight, ShieldCheck, Lock, ClipboardCheck, Globe, MapPin, Mail } from "lucide-react";
 import Image from "next/image";
 
 // Trust Strip Cards Data
@@ -15,7 +15,7 @@ const trustStrip = [
     {
         icon: ShieldCheck,
         label: "Secure",
-        desc: "ISO 27001 aligned protection systems.",
+        desc: "In Process of aligning with ISO 27001 Quality System",
     },
     {
         icon: ClipboardCheck,
@@ -176,7 +176,7 @@ export function SiteFooter() {
                             <Image
                                 src="/logo.jpeg"
                                 alt="Trudicon Logo"
-                                className="h-12 md:h-14 w-auto object-contain"
+                                className="h-12 md:h-14 w-auto object-contain bg-primary p-1.5 rounded-lg"
                                 width={100}
                                 height={100}
                             />
@@ -191,29 +191,12 @@ export function SiteFooter() {
                             <div className="flex items-start gap-2.5">
                                 <MapPin className="h-4 w-4 mt-0.5 text-primary flex-shrink-0" />
                                 <a
-                                    href="https://maps.google.com/?q=Level+9,+Spaze+i-Tech+Park,+A1+Tower,+Sohna+Road,+Gurgaon,+Haryana+122018,+India"
+                                    href="https://maps.google.com/?q=422,+Level+4,+Vipul+Trade+Tower,+Sohna+Road,+Gurgaon,+Haryana,+122018"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="hover:text-primary transition-colors leading-relaxed"
                                 >
-                                    Level 9, Spaze i-Tech Park, A1 Tower, Sohna Road, Gurgaon, Haryana 122018, India
-                                </a>
-                            </div>
-                            <div className="flex items-center gap-2.5">
-                                <Phone className="h-4 w-4 text-primary flex-shrink-0" />
-                                <a href="tel:+9101246768620" className="hover:text-primary transition-colors">
-                                    +91-0124-6768620
-                                </a>
-                            </div>
-                            <div className="flex items-center gap-2.5">
-                                <MessageSquare className="h-4 w-4 text-primary flex-shrink-0" />
-                                <a
-                                    href="https://wa.me/919999799250"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="hover:text-primary transition-colors"
-                                >
-                                    WhatsApp: +91-9999799250
+                                    422, Level 4, Vipul Trade Tower, Sohna Road, Gurgaon, Haryana, 122018
                                 </a>
                             </div>
                             <div className="flex items-center gap-2.5">

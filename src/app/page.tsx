@@ -94,11 +94,12 @@ function Counter({ value, duration = 1.2 }: { value: string; duration?: number }
   const [count, setCount] = useState(0);
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-80px" });
+  const hasNumeric = /\d/.test(value);
   const numericValue = parseInt(value.replace(/\D/g, ""), 10) || 0;
   const suffix = value.replace(/\d/g, "");
 
   useEffect(() => {
-    if (!isInView) return;
+    if (!isInView || !hasNumeric) return;
     let start = 0;
     const end = numericValue;
     if (end === 0) return;
@@ -112,7 +113,11 @@ function Counter({ value, duration = 1.2 }: { value: string; duration?: number }
       }
     }, incrementTime);
     return () => clearInterval(timer);
-  }, [isInView, numericValue, duration]);
+  }, [isInView, numericValue, duration, hasNumeric]);
+
+  if (!hasNumeric) {
+    return <span ref={ref}>{value}</span>;
+  }
 
   return <span ref={ref}>{isInView ? `${count}${suffix}` : `0${suffix}`}</span>;
 }
@@ -324,11 +329,8 @@ export default function HomePage() {
               <div className="mt-9 flex flex-wrap gap-4">
                 <Button asChild size="lg" className="bg-primary hover:bg-primary/95 text-primary-foreground font-semibold px-8 shadow-sm">
                   <Link href="/contact">
-                    Request Consultation <ArrowRight className="ml-2 h-4 w-4" />
+                    Contact Us <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
-                </Button>
-                <Button asChild size="lg" variant="outline" className="border-border hover:bg-muted/50 font-semibold px-8">
-                  <Link href="/contact">Contact Us</Link>
                 </Button>
               </div>
 
@@ -702,22 +704,18 @@ export default function HomePage() {
             </cite>
           </div>
 
-          {/* Client Logos Placeholders Row */}
+          {/* Association Memberships */}
           <div className="mt-14 pt-10 border-t border-border/80">
-            <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground mb-8">
-              Verification Standards Validated For
-            </p>
-            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-3 justify-center items-center max-w-2xl mx-auto">
+            <div className="grid gap-6 sm:grid-cols-2 justify-center items-center max-w-3xl mx-auto">
               {[
-                "Consular Missions Logo",
-                "Corporate Compliance Logo",
-                "Legal Advisory Logo",
-              ].map((logoText, i) => (
+                "Member of the Association of Certified Fraud Examiners",
+                "Member of The Indo French Chamber of Commerce and Industries",
+              ].map((text, i) => (
                 <div
                   key={i}
-                  className="rounded-lg border border-border/80 bg-white/60 py-4 px-6 text-center select-none text-[10px] font-bold uppercase tracking-wider text-muted-foreground hover:border-primary/20 hover:text-primary transition-colors"
+                  className="rounded-xl border border-border bg-white px-6 py-5 text-center select-none text-xs font-bold uppercase tracking-wider text-[#5B6470] shadow-sm transition-all duration-300 hover:border-primary/30 hover:text-primary hover:shadow-md"
                 >
-                  {logoText}
+                  {text}
                 </div>
               ))}
             </div>
@@ -741,10 +739,7 @@ export default function HomePage() {
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/95 text-primary-foreground font-semibold px-8 shadow-sm">
-                <Link href="/contact">Schedule Consultation</Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="border-border hover:bg-muted/50 font-semibold px-8">
-                <Link href="/contact">Contact Team</Link>
+                <Link href="/contact">Contact Us</Link>
               </Button>
             </div>
           </div>

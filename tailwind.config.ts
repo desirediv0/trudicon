@@ -43,6 +43,9 @@ const config: Config = {
           foreground: "var(--card-foreground)",
         },
       },
+      fontFamily: {
+        sans: ["var(--font-sans)", "sans-serif"],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",

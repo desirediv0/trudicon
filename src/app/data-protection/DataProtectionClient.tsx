@@ -102,23 +102,6 @@ export function DataProtectionClient() {
                 Protecting Sensitive Information Through Secure Infrastructure &amp; Responsible Operations
               </p>
 
-              {/* Floating badges */}
-              <div className="flex flex-wrap gap-3 pt-4">
-                {[
-                  { text: "🔒 GDPR Compliant", color: "bg-primary/5 text-primary border-primary/10" },
-                  { text: "🛡️ DPDPA Ready", color: "bg-green-50 text-green-700 border-green-200" },
-                  { text: "⚡ High Availability", color: "bg-slate-50 text-slate-700 border-slate-200" }
-                ].map((badge, idx) => (
-                  <motion.div
-                    key={idx}
-                    variants={floatVariants(idx * 0.4)}
-                    animate="animate"
-                    className={`px-4 py-2 rounded-full border text-xs font-bold tracking-wide uppercase ${badge.color}`}
-                  >
-                    {badge.text}
-                  </motion.div>
-                ))}
-              </div>
             </motion.div>
 
             {/* Right Large Privacy Placeholder */}

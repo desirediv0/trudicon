@@ -15,13 +15,12 @@ import {
   Loader2,
   CheckCircle2,
   Send,
-  MessageSquare,
   Building2,
   User,
-  PhoneCall,
   Briefcase,
   Globe,
-  ArrowRight
+  ArrowRight,
+  MessageSquare
 } from "lucide-react";
 import { ImagePlaceholder } from "@/components/site/ImagePlaceholder";
 
@@ -41,8 +40,8 @@ const contactCards = [
   {
     icon: MapPin,
     title: "Office Address",
-    value: "Level 9, Spaze i-Tech Park, A1 Tower, Sohna Road, Gurgaon, Haryana 122018, India",
-    href: "https://maps.google.com/?q=Level+9,+Spaze+i-Tech+Park,+A1+Tower,+Sohna+Road,+Gurgaon,+Haryana+122018,+India"
+    value: "422, Level 4, Vipul Trade Tower, Sohna Road, Gurgaon, Haryana, 122018",
+    href: "https://maps.google.com/?q=422,+Level+4,+Vipul+Trade+Tower,+Sohna+Road,+Gurgaon,+Haryana,+122018"
   },
   {
     icon: Mail,
@@ -55,18 +54,6 @@ const contactCards = [
     title: "Support Email",
     value: "support@trudicon.co.in",
     href: "mailto:support@trudicon.co.in"
-  },
-  {
-    icon: Phone,
-    title: "Phone Number",
-    value: "+91-0124-6768620",
-    href: "tel:+9101246768620"
-  },
-  {
-    icon: MessageSquare,
-    title: "WhatsApp Helpline",
-    value: "+91-9999799250",
-    href: "https://wa.me/919999799250"
   },
   {
     icon: Clock,
@@ -180,13 +167,6 @@ export function ContactClient() {
                 >
                   Request Consultation
                   <ArrowRight className="h-4 w-4" />
-                </a>
-                <a
-                  href="tel:+9101246768620"
-                  className="inline-flex items-center gap-2 bg-white hover:bg-slate-50 border border-border text-foreground font-semibold text-sm px-6 py-3.5 rounded-full transition-all duration-200"
-                >
-                  <PhoneCall className="h-4 w-4 text-primary" />
-                  Call Us
                 </a>
               </div>
             </motion.div>
