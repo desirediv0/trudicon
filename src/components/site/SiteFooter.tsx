@@ -288,7 +288,12 @@ export function SiteFooter() {
                             </Link>
                         </div>
                     </div>
-
+                    <div className="font-semibold text-right">
+                        <span>Designed &amp; Developed by </span>
+                        <a href="https://desirediv.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors text-foreground font-bold">
+                            Desire Div
+                        </a>
+                    </div>
                 </div>
             </div>
         </footer>
