@@ -39,18 +39,6 @@ const itemVariants = {
   },
 };
 
-const floatVariants = (delay: number) => ({
-  animate: {
-    y: [0, -10, 0],
-    transition: {
-      duration: 5,
-      repeat: Infinity,
-      repeatType: "reverse" as const,
-      ease: "easeInOut" as const,
-      delay,
-    },
-  },
-});
 
 const infra = [
   "Controlled access",
