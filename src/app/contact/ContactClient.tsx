@@ -131,7 +131,7 @@ export function ContactClient() {
         <svg width="100%" height="100%">
           <defs>
             <pattern id="contact-grid" width="80" height="80" patternUnits="userSpaceOnUse">
-              <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#4B21B8" strokeWidth="0.8" />
+              <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#6D1A77" strokeWidth="0.8" />
             </pattern>
           </defs>
           <rect width="100%" height="100%" fill="url(#contact-grid)" />
@@ -209,7 +209,7 @@ export function ContactClient() {
                 >
                   <CardWrapper
                     {...(c.href ? { href: c.href, target: c.href.startsWith("http") ? "_blank" : undefined, rel: c.href.startsWith("http") ? "noopener noreferrer" : undefined } : {})}
-                    className={`group w-full rounded-[24px] border border-border bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-primary hover:shadow-[0_12px_24px_rgba(75,33,184,0.06)] flex flex-col justify-between ${c.href ? "cursor-pointer" : ""}`}
+                    className={`group w-full rounded-[24px] border border-border bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-primary hover:shadow-[0_12px_24px_rgba(109,26,119,0.06)] flex flex-col justify-between ${c.href ? "cursor-pointer" : ""}`}
                   >
                     <div>
                       <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/5 text-primary transition-all duration-300 group-hover:scale-105 group-hover:bg-primary group-hover:text-white">

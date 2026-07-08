@@ -105,7 +105,7 @@ export function SiteFooter() {
                 <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
                     <defs>
                         <pattern id="footer-grid" width="48" height="48" patternUnits="userSpaceOnUse">
-                            <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#4B21B8" strokeWidth="0.75" />
+                            <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#6D1A77" strokeWidth="0.75" />
                         </pattern>
                     </defs>
                     <rect width="100%" height="100%" fill="url(#footer-grid)" />
@@ -113,14 +113,14 @@ export function SiteFooter() {
                     <path
                         d="M 85% 15% L 95% 85% L 75% 85% Z"
                         fill="none"
-                        stroke="#4B21B8"
+                        stroke="#6D1A77"
                         strokeWidth="1.5"
                         strokeDasharray="4 4"
                     />
                     <path
                         d="M 87% 20% L 93% 80% L 81% 80% Z"
                         fill="none"
-                        stroke="#4B21B8"
+                        stroke="#6D1A77"
                         strokeWidth="0.75"
                     />
                 </svg>
@@ -143,7 +143,7 @@ export function SiteFooter() {
                                 <motion.div
                                     key={idx}
                                     variants={stripItemVariants}
-                                    className="group/strip rounded-xl border border-border bg-white p-5 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-primary hover:shadow-[0_8px_20px_rgba(75,33,184,0.04)]"
+                                    className="group/strip rounded-xl border border-border bg-white p-5 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-primary hover:shadow-[0_8px_20px_rgba(109,26,119,0.04)]"
                                 >
                                     <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-lg bg-primary/5 text-primary transition-colors duration-300 group-hover/strip:bg-primary group-hover/strip:text-white">
                                         <IconComp className="h-5 w-5 transition-transform duration-300 group-hover/strip:rotate-6" />
@@ -174,9 +174,9 @@ export function SiteFooter() {
                     <motion.div variants={columnVariants} className="space-y-5">
                         <Link href="/" className="flex items-center gap-3 group" aria-label="Trudicon home">
                             <Image
-                                src="/logo.jpeg"
+                                src="/logo.png"
                                 alt="Trudicon Logo"
-                                className="h-12 md:h-14 w-auto object-contain bg-primary p-1.5 rounded-lg"
+                                className="h-12 md:h-14 w-auto object-contain p-1.5 rounded-lg"
                                 width={100}
                                 height={100}
                             />

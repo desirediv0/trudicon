@@ -105,7 +105,7 @@ export function AboutClient() {
         <svg width="100%" height="100%">
           <defs>
             <pattern id="about-grid" width="80" height="80" patternUnits="userSpaceOnUse">
-              <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#4B21B8" strokeWidth="0.8" />
+              <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#6D1A77" strokeWidth="0.8" />
             </pattern>
           </defs>
           <rect width="100%" height="100%" fill="url(#about-grid)" />
@@ -274,7 +274,7 @@ export function AboutClient() {
                   <motion.div
                     key={item.title}
                     variants={itemVariants}
-                    className="group relative p-8 rounded-[24px] border border-border bg-white shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-primary hover:shadow-[0_12px_24px_rgba(75,33,184,0.06)]"
+                    className="group relative p-8 rounded-[24px] border border-border bg-white shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-primary hover:shadow-[0_12px_24px_rgba(109,26,119,0.06)]"
                   >
                     <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/5 text-primary mb-6 transition-all duration-300 group-hover:scale-105 group-hover:bg-primary group-hover:text-white">
                       <Icon className="h-5.5 w-5.5 transition-transform duration-300 group-hover:rotate-6" />
@@ -376,7 +376,7 @@ export function AboutClient() {
                   <motion.div
                     key={ind.title}
                     variants={itemVariants}
-                    className="p-8 rounded-[24px] border border-border bg-white shadow-sm flex items-start gap-4 transition-all duration-300 hover:border-primary hover:shadow-[0_12px_24px_rgba(75,33,184,0.06)] group"
+                    className="p-8 rounded-[24px] border border-border bg-white shadow-sm flex items-start gap-4 transition-all duration-300 hover:border-primary hover:shadow-[0_12px_24px_rgba(109,26,119,0.06)] group"
                   >
                     <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-lg bg-primary/5 text-primary transition-all duration-300 group-hover:scale-105 group-hover:bg-primary group-hover:text-white">
                       <Icon className="h-5 w-5 transition-transform duration-300 group-hover:rotate-6" />

@@ -80,7 +80,7 @@ export function FaqClient() {
         <svg width="100%" height="100%">
           <defs>
             <pattern id="faq-grid" width="60" height="60" patternUnits="userSpaceOnUse">
-              <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#4B21B8" strokeWidth="0.8" />
+              <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#6D1A77" strokeWidth="0.8" />
             </pattern>
           </defs>
           <rect width="100%" height="100%" fill="url(#faq-grid)" />

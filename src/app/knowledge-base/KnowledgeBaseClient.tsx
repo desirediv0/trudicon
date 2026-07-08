@@ -82,12 +82,12 @@ export function KnowledgeBaseClient() {
         <svg width="100%" height="100%">
           <defs>
             <pattern id="kb-grid" width="60" height="60" patternUnits="userSpaceOnUse">
-              <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#4B21B8" strokeWidth="0.8" />
+              <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#6D1A77" strokeWidth="0.8" />
             </pattern>
           </defs>
           <rect width="100%" height="100%" fill="url(#kb-grid)" />
           {/* Subtle network lines */}
-          <path d="M100,200 L300,400 L500,200 M900,100 L1100,300 L1300,100" fill="none" stroke="#4B21B8" strokeWidth="1.5" strokeDasharray="3 3" />
+          <path d="M100,200 L300,400 L500,200 M900,100 L1100,300 L1300,100" fill="none" stroke="#6D1A77" strokeWidth="1.5" strokeDasharray="3 3" />
         </svg>
       </div>
 
@@ -206,7 +206,7 @@ export function KnowledgeBaseClient() {
                   <motion.div
                     key={card.title}
                     variants={itemVariants}
-                    className="p-6 rounded-[24px] border border-border bg-white shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-primary hover:shadow-[0_12px_24px_rgba(75,33,184,0.06)]"
+                    className="p-6 rounded-[24px] border border-border bg-white shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-primary hover:shadow-[0_12px_24px_rgba(109,26,119,0.06)]"
                   >
                     <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-primary/5 text-primary mb-5">
                       <Icon className="h-5 w-5" />
@@ -261,7 +261,7 @@ export function KnowledgeBaseClient() {
                           y1="200"
                           x2={x2}
                           y2={y2}
-                          stroke="#4B21B8"
+                          stroke="#6D1A77"
                           strokeWidth="1.2"
                           strokeOpacity="0.25"
                           strokeDasharray="2 2"

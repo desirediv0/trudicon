@@ -71,7 +71,7 @@ Trudicon Consultancy Services Secure Relayer.
 
     const mailHtml = `
 <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #E5E7EB; border-radius: 8px;">
-  <h2 style="color: #4B21B8; margin-top: 0; border-bottom: 2px solid #F3F4F6; padding-bottom: 10px;">New Confidential Enquiry</h2>
+  <h2 style="color: #6D1A77; margin-top: 0; border-bottom: 2px solid #F3F4F6; padding-bottom: 10px;">New Confidential Enquiry</h2>
   <table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
     <tr>
       <td style="padding: 8px 0; font-weight: bold; color: #4B5563; width: 180px;">Full Name:</td>
@@ -83,11 +83,11 @@ Trudicon Consultancy Services Secure Relayer.
     </tr>
     <tr>
       <td style="padding: 8px 0; font-weight: bold; color: #4B5563;">Email Address:</td>
-      <td style="padding: 8px 0; color: #111827;"><a href="mailto:${email}" style="color: #4B21B8;">${email}</a></td>
+      <td style="padding: 8px 0; color: #111827;"><a href="mailto:${email}" style="color: #6D1A77;">${email}</a></td>
     </tr>
     <tr>
       <td style="padding: 8px 0; font-weight: bold; color: #4B5563;">Phone Number:</td>
-      <td style="padding: 8px 0; color: #111827;"><a href="tel:${phone}" style="color: #4B21B8;">${phone}</a></td>
+      <td style="padding: 8px 0; color: #111827;"><a href="tel:${phone}" style="color: #6D1A77;">${phone}</a></td>
     </tr>
     <tr>
       <td style="padding: 8px 0; font-weight: bold; color: #4B5563;">Service Required:</td>

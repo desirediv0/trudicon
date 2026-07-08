@@ -164,9 +164,9 @@ export function SiteHeader() {
                     {/* Logo Left */}
                     <Link href="/" className="flex items-center gap-3 group" aria-label="Trudicon home">
                         <img
-                            src="/logo.jpeg"
+                            src="/logo.png"
                             alt="Trudicon Logo"
-                            className="h-12 md:h-14 w-auto object-contain bg-primary p-1.5 rounded-lg transition-transform duration-300 group-hover:scale-[1.02]"
+                            className="h-12 md:h-14 w-auto object-contain p-1.5 rounded-lg transition-transform duration-300 group-hover:scale-[1.02]"
                         />
                     </Link>
 
@@ -219,7 +219,7 @@ export function SiteHeader() {
                         <Button
                             asChild
                             variant="outline"
-                            className="border-[#4B21B8] bg-white text-[#4B21B8] hover:bg-[#4B21B8] hover:text-white font-semibold transition-all duration-300 hover:-translate-y-[2px] hover:shadow-[0_4px_16px_rgba(75,33,184,0.12)] px-5 h-10 rounded-md"
+                            className="border-[#6D1A77] bg-white text-[#6D1A77] hover:bg-[#6D1A77] hover:text-white font-semibold transition-all duration-300 hover:-translate-y-[2px] hover:shadow-[0_4px_16px_rgba(109,26,119,0.12)] px-5 h-10 rounded-md"
                         >
                             <Link href="/contact">Request Consultation</Link>
                         </Button>
@@ -257,7 +257,7 @@ export function SiteHeader() {
                                                 key={idx}
                                                 href={item.href}
                                                 onClick={() => setHoveredMenu(null)}
-                                                className="group/card flex flex-col justify-between rounded-xl border border-border bg-card p-6 shadow-[0_1px_3px_rgba(0,0,0,0.01)] transition-all duration-300 hover:-translate-y-1 hover:border-primary hover:shadow-[0_8px_30px_rgba(75,33,184,0.05)]"
+                                                className="group/card flex flex-col justify-between rounded-xl border border-border bg-card p-6 shadow-[0_1px_3px_rgba(0,0,0,0.01)] transition-all duration-300 hover:-translate-y-1 hover:border-primary hover:shadow-[0_8px_30px_rgba(109,26,119,0.05)]"
                                             >
                                                 <div>
                                                     <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-primary/5 text-primary transition-colors duration-300 group-hover/card:bg-primary group-hover/card:text-white">
@@ -309,9 +309,9 @@ export function SiteHeader() {
                                 <div className="flex items-center justify-between pb-6 border-b border-border">
                                     <div className="flex items-center gap-2.5">
                                         <img
-                                            src="/logo.jpeg"
+                                            src="/logo.png"
                                             alt="Trudicon Logo"
-                                            className="h-8 w-auto object-contain bg-primary p-1 rounded"
+                                            className="h-8 w-auto object-contain p-1 rounded"
                                         />
                                         <span className="text-[14px] font-bold tracking-[0.1em] text-foreground uppercase">
                                             Trudicon
@@ -351,7 +351,7 @@ export function SiteHeader() {
                             <div className="mt-auto border-t border-border pt-6">
                                 <Button
                                     asChild
-                                    className="w-full bg-[#4B21B8] hover:bg-[#4B21B8]/95 text-white font-bold h-11"
+                                    className="w-full bg-[#6D1A77] hover:bg-[#6D1A77]/95 text-white font-bold h-11"
                                 >
                                     <Link href="/contact" onClick={() => setOpen(false)}>
                                         Request Consultation

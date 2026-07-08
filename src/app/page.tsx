@@ -285,9 +285,9 @@ export default function HomePage() {
         {/* Subtle Geometry Detail */}
         <div className="absolute inset-0 pointer-events-none opacity-[0.03] select-none">
           <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-            <line x1="10%" y1="0" x2="80%" y2="100%" stroke="#4B21B8" strokeWidth="1" />
-            <line x1="90%" y1="0" x2="20%" y2="100%" stroke="#4B21B8" strokeWidth="1" strokeDasharray="5 5" />
-            <polygon points="100,100 250,350 50,350" fill="none" stroke="#4B21B8" strokeWidth="1.5" />
+            <line x1="10%" y1="0" x2="80%" y2="100%" stroke="#6D1A77" strokeWidth="1" />
+            <line x1="90%" y1="0" x2="20%" y2="100%" stroke="#6D1A77" strokeWidth="1" strokeDasharray="5 5" />
+            <polygon points="100,100 250,350 50,350" fill="none" stroke="#6D1A77" strokeWidth="1.5" />
           </svg>
         </div>
 
@@ -619,7 +619,7 @@ export default function HomePage() {
             return (
               <div
                 key={idx}
-                className="group flex items-start gap-4 rounded-xl border border-border bg-card p-6 shadow-[0_1px_3px_rgba(0,0,0,0.01)] transition-all duration-300 hover:border-primary hover:shadow-[0_0_24px_rgba(75,33,184,0.04)]"
+                className="group flex items-start gap-4 rounded-xl border border-border bg-card p-6 shadow-[0_1px_3px_rgba(0,0,0,0.01)] transition-all duration-300 hover:border-primary hover:shadow-[0_0_24px_rgba(109,26,119,0.04)]"
               >
                 <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-primary/5 text-primary transition-colors duration-300 group-hover:bg-primary group-hover:text-white">
                   <IconComp className="h-5 w-5" />

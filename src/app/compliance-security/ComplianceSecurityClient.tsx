@@ -108,7 +108,7 @@ export function ComplianceSecurityClient() {
         <svg width="100%" height="100%">
           <defs>
             <pattern id="security-grid" width="80" height="80" patternUnits="userSpaceOnUse">
-              <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#4B21B8" strokeWidth="0.8" />
+              <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#6D1A77" strokeWidth="0.8" />
             </pattern>
           </defs>
           <rect width="100%" height="100%" fill="url(#security-grid)" />
@@ -141,7 +141,7 @@ export function ComplianceSecurityClient() {
               <div className="flex flex-wrap gap-3 pt-4">
                 {[
                   { text: "🔒 Need-to-Know Access", color: "bg-green-50 text-green-700 border-green-200" },
-                  { text: "🛡️ ISO 27001 Aligned", color: "bg-primary/5 text-primary border-primary/10" },
+                  { text: "🛡️ Process of alligning with ISO 27001 Quality System", color: "bg-primary/5 text-primary border-primary/10" },
                   { text: "📋 Secure Audit Trails", color: "bg-slate-50 text-slate-700 border-slate-200" }
                 ].map((badge, idx) => (
                   <motion.div
@@ -223,7 +223,7 @@ export function ComplianceSecurityClient() {
                   <motion.div
                     key={h.title}
                     variants={itemVariants}
-                    className="p-6 rounded-[24px] border border-border bg-white shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-primary hover:shadow-[0_12px_24px_rgba(75,33,184,0.06)]"
+                    className="p-6 rounded-[24px] border border-border bg-white shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-primary hover:shadow-[0_12px_24px_rgba(109,26,119,0.06)]"
                   >
                     <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-primary/5 text-primary mb-5">
                       <Icon className="h-5 w-5" />
@@ -315,7 +315,7 @@ export function ComplianceSecurityClient() {
                   <motion.div
                     key={pillar.title}
                     variants={itemVariants}
-                    className="group p-8 rounded-[24px] border border-border bg-white shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-primary hover:shadow-[0_12px_24px_rgba(75,33,184,0.06)]"
+                    className="group p-8 rounded-[24px] border border-border bg-white shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-primary hover:shadow-[0_12px_24px_rgba(109,26,119,0.06)]"
                   >
                     <span className="text-[10px] font-extrabold tracking-[0.2em] text-primary uppercase">
                       Pillar 0{idx + 1}
@@ -375,11 +375,11 @@ export function ComplianceSecurityClient() {
                 <div className="relative w-full h-64 my-auto flex items-center justify-center">
                   <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 100 100" preserveAspectRatio="none">
                     {/* Network Lines */}
-                    <line x1="50" y1="50" x2="22" y2="22" stroke="#4B21B8" strokeWidth="0.5" strokeOpacity="0.25" strokeDasharray="2 2" />
-                    <line x1="50" y1="50" x2="78" y2="22" stroke="#4B21B8" strokeWidth="0.5" strokeOpacity="0.25" strokeDasharray="2 2" />
-                    <line x1="50" y1="50" x2="78" y2="78" stroke="#4B21B8" strokeWidth="0.5" strokeOpacity="0.25" strokeDasharray="2 2" />
-                    <line x1="50" y1="50" x2="22" y2="78" stroke="#4B21B8" strokeWidth="0.5" strokeOpacity="0.25" strokeDasharray="2 2" />
-                    <line x1="50" y1="50" x2="50" y2="15" stroke="#4B21B8" strokeWidth="0.5" strokeOpacity="0.25" strokeDasharray="2 2" />
+                    <line x1="50" y1="50" x2="22" y2="22" stroke="#6D1A77" strokeWidth="0.5" strokeOpacity="0.25" strokeDasharray="2 2" />
+                    <line x1="50" y1="50" x2="78" y2="22" stroke="#6D1A77" strokeWidth="0.5" strokeOpacity="0.25" strokeDasharray="2 2" />
+                    <line x1="50" y1="50" x2="78" y2="78" stroke="#6D1A77" strokeWidth="0.5" strokeOpacity="0.25" strokeDasharray="2 2" />
+                    <line x1="50" y1="50" x2="22" y2="78" stroke="#6D1A77" strokeWidth="0.5" strokeOpacity="0.25" strokeDasharray="2 2" />
+                    <line x1="50" y1="50" x2="50" y2="15" stroke="#6D1A77" strokeWidth="0.5" strokeOpacity="0.25" strokeDasharray="2 2" />
                   </svg>
 
                   {/* Center Node */}
