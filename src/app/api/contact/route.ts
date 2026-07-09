@@ -27,9 +27,9 @@ export async function POST(req: Request) {
     const smtpHost = process.env.SMTP_HOST || "smtp-relay.brevo.com";
     const smtpPort = parseInt(process.env.SMTP_PORT || "587");
     const smtpUser = process.env.SMTP_USER;
-    const smtpPass = process.env.SMTP_PASS;
-    const adminEmail = process.env.ADMIN_EMAIL || "admin@trudicon.co.in";
-    const fromEmail = process.env.FROM_EMAIL || "info@trudicon.co.in";
+    const smtpPass = process.env.SMTP_PASS || process.env.SMTP_PASSWORD;
+    const fromEmail = process.env.FROM_EMAIL || "codeshorts007@gmail.com";
+    const adminEmail = process.env.ADMIN_EMAIL || fromEmail;
 
     if (!smtpUser || !smtpPass) {
       console.warn("SMTP user or password not configured in environment variables. Falling back to log-only mode.");
