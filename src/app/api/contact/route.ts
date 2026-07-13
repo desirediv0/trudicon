@@ -28,7 +28,7 @@ export async function POST(req: Request) {
     const smtpPort = parseInt(process.env.SMTP_PORT || "587");
     const smtpUser = process.env.SMTP_USER;
     const smtpPass = process.env.SMTP_PASS || process.env.SMTP_PASSWORD;
-    const fromEmail = process.env.FROM_EMAIL || "codeshorts007@gmail.com";
+    const fromEmail = process.env.FROM_EMAIL || "info@trudicon.co.in";
     const adminEmail = process.env.ADMIN_EMAIL || fromEmail;
 
     if (!smtpUser || !smtpPass) {
